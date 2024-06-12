@@ -9,8 +9,8 @@ async def wait_n(n: int, max_delay: int):
     """
     Purpose: one
     """
-    delays_list = []
-    i = 0
+    delays_list: list = []
+    i: int = 0
     while i < n:
         task = await wait_random(max_delay)
         delays_list.append(task)
