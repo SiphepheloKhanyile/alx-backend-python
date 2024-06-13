@@ -4,9 +4,10 @@ Async Generator
 """
 import asyncio
 import random
+from typing import Generator
 
 
-async def async_generator() -> int:
+async def async_generator() -> Generator[float, None, None]:
     """Coroutine function
     Returns:
         int: random number 0 <= n <= 10
